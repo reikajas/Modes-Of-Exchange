@@ -14,12 +14,13 @@ line-height: normal;
 padding: 35px 50px 35px 50px;
 }
 
-.highlighted-text {
+.highlighted-text-a,.highlighted-text-b,.highlighted-text-c,.highlighted-text-d {
+color: #000;
    display: inline;
    text-decoration: none;
 }
 
-.highlighted-text:hover {
+.highlighted-text-a:hover {
 color: #00D9FF;
 font-family: "GT Alpina Trial";
 font-size: 4vw;
@@ -31,8 +32,56 @@ line-height: normal;
 paint-order: stroke fill;
 display: inline;
 }
+.highlighted-text-b:hover {
+color: #FF6F00;
+font-family: "GT Alpina Trial";
+font-size: 4vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+-webkit-text-stroke-width: 20px;
+-webkit-text-stroke-color: #000;
+paint-order: stroke fill;
+display: inline;
+}
+.highlighted-text-c:hover {
+color: #E0F;
+font-family: "GT Alpina Trial";
+font-size: 4vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+-webkit-text-stroke-width: 20px;
+-webkit-text-stroke-color: #000;
+paint-order: stroke fill;
+display: inline;
+}
+.highlighted-text-d:hover {
+color: #7F0;
+font-family: "GT Alpina Trial";
+font-size: 4vw;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+-webkit-text-stroke-width: 20px;
+-webkit-text-stroke-color: #000;
+paint-order: stroke fill;
+display: inline;
+}
 
-.text:has(.highlighted-text:hover) {
+.text:has(.highlighted-text-a:hover) {
+-webkit-text-stroke-width: 10px;
+-webkit-text-stroke-color: #000;
+}
+.text:has(.highlighted-text-b:hover) {
+-webkit-text-stroke-width: 10px;
+-webkit-text-stroke-color: #000;
+}
+.text:has(.highlighted-text-c:hover) {
+-webkit-text-stroke-width: 10px;
+-webkit-text-stroke-color: #000;
+}
+.text:has(.highlighted-text-d:hover) {
 -webkit-text-stroke-width: 10px;
 -webkit-text-stroke-color: #000;
 }
